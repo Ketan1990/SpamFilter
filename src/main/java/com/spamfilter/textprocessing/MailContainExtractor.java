@@ -10,6 +10,8 @@ import com.spamfilter.opreation.Finding;
 public class MailContainExtractor {
     private Finding finding;
     private String emailID;
+    private String maildata;
+
     public MailContainExtractor(){
         finding=new Finding();
     }
@@ -30,7 +32,7 @@ public class MailContainExtractor {
         return  input.substring((input.indexOf("Message:")+6)).trim();
     }
 
-    public static String getBodyContant(String mailContain) {
+    public  String getBodyContantOfSpamEmail(String mailContain) {
         EmailHeaderRemove r=new EmailHeaderRemove();
         String contain=r.all(mailContain);
         return RemoveHtml.removeAllHtml(contain);
@@ -38,6 +40,12 @@ public class MailContainExtractor {
     }
 
 
+    public String getBodyContantOfEmail(String mail) {
+        maildata= RemoveHtml.removeAllHtml(mail);
+        String subcontain=maildata.substring(maildata.indexOf("Content:")+8,maildata.length());
+        return subcontain;
 
+        //str=str.substring(str.indexOf("Content-Transfer-Encoding: 7bit")+"Content-Transfer-Encoding: 7bit".length(),str.length()-"------000000000000000000000--".length());
 
+    }
 }

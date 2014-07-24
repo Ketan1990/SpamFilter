@@ -17,11 +17,9 @@ public class TextProcessing {
 
     }
 
-    public WordCounter process(String text) {
-        String sentence=discard.discardSpecialSymbol(text);
-        System.out.println(sentence);
-        String data=discard.discardConjunctionAndArticles(sentence);
-       // System.out.println(discard.discardConjunctionAndArticles(sentence));
+    public WordCounter process(String sentence) {
+
+       String data=discard.discardConjunctionAndArticles(discard.discardSpecialSymbol(sentence));
         String[]word=separate.separateBySpace(data);
         wc.insertWords(word);
         return  wc ;

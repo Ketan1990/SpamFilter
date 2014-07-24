@@ -12,19 +12,21 @@ public class Discard {
     private String words[];
     private String sentence =" ";
     String[] matched;
+    private String text=" ";
 
     public String discardSpecialSymbol(String text) {
+
         words= text.split("\\W+");
         return makeSentence(words);
     }
 
-    public String discardConjunctionAndArticles(String text) {
-        words=new Separatore().separateBySpace(text);
+    public String discardConjunctionAndArticles(String sentence) {
+        words=new Separatore().separateBySpace(sentence);
         for (int i = 0; i < words.length; i++) {
             if(!isMatch(words[i]))
-                sentence=sentence+words[i]+" ";
+                text=text+words[i]+" ";
         }
-        return sentence.trim();
+        return text.trim();
     }
 
 
@@ -35,9 +37,9 @@ public class Discard {
     }
     private String makeSentence(String[] words){
         for (int i = 0; i < words.length; i++) {
-            sentence =(sentence +words[i]+" ").trim();
+            sentence =sentence +words[i]+" ";
         }
-        return sentence;
+        return sentence.trim();
 
     }
 }

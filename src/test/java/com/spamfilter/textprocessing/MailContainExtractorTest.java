@@ -34,10 +34,22 @@ public class MailContainExtractorTest {
     @Test
     public void shouldExtractMessaggBodyFromEmail()   {
         FileRead fr=new FileRead();
-        String maildata=fr.read("F:\\spamprojct\\testmails\\TRAIN_00011.eml");
+        String maildata=fr.read("E:\\git\\SpamFilter\\testmails\\TRAIN_00011.eml");
         MailContainExtractor mt=new MailContainExtractor();
-        String actual =mt.getBodyContant(maildata);
+        String actual =mt.getBodyContantOfSpamEmail(maildata);
         System.out.println(actual);
+        assertEquals(actual.length(),5374);
+
+
+    }
+    @Test
+    public void shouldExtractMessaggBodyFromGEmail()   {
+        FileRead fr=new FileRead();
+        String maildata=fr.read("E:\\git\\SpamFilter\\gmailstest\\508102099.RPBLNBTE.36445.635320417278915000@GEN2.center.com.eml");
+        MailContainExtractor mt=new MailContainExtractor();
+        String actual =mt.getBodyContantOfEmail(maildata);
+        System.out.println(actual);
+        assertEquals(actual.length(),1446);
 
 
     }

@@ -28,7 +28,7 @@ public class SpamDAO {
         Double sf=new Double(value);
         Double spamFrequency=getSpamFrequencyCount(key)+value;
         Double genuineFrequency=getGenuinFrequencyCount(key);
-        Double prob=SpamProbability.Calculate(spamFrequency, genuineFrequency);
+        Double prob=SpamProbability.calculate(spamFrequency, genuineFrequency);
         queryEngine.saveScalarValues(key, "spamFrequency",sf, prob);
     }
 
@@ -36,17 +36,17 @@ public class SpamDAO {
         Double gf=new Double(value);
         Double spamFrequency=getSpamFrequencyCount(key);
         Double genuineFrequency=getGenuinFrequencyCount(key)+value;
-        Double prob= SpamProbability.Calculate(spamFrequency, genuineFrequency);
+        Double prob= SpamProbability.calculate(spamFrequency, genuineFrequency);
         queryEngine.saveScalarValues(key,"genuineFrequency",gf, prob);
     }
 
     public void insertGeniuneEmailID(String id) {
-        if(!isPresentGenuineId(id)&&!isPresentSpamId(id))
+        if(!isPresentGenuineId(id))
             queryEngine.saveSingleValue("genuineEmailId", id);
     }
 
     public void insertSpamEmailID(String id) {
-        if(!isPresentSpamId(id)&&!isPresentGenuineId(id))
+        if(!isPresentSpamId(id))
             queryEngine.saveSingleValue("spamEmailId", id);
     }
 
@@ -66,5 +66,6 @@ public class SpamDAO {
         queryEngine.remove("genuineEmailId", id);
 
     }
+
 
 }

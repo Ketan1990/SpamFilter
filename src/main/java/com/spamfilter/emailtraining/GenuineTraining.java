@@ -11,16 +11,16 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * Created by Ketan on 7/22/2014.
+ * Created by ketan on 7/24/2014.
  */
-public class SpamTraining {
+public class GenuineTraining {
     private String mail;
     private SpamDAO db;
     private WordCounter wco;
     private TextProcessing wc;
     private Map<String, Integer> map;
     private MailContainExtractor mailContainExtractor;
-    public SpamTraining(String mail) {
+    public GenuineTraining(String mail) {
         this.mail=mail;
         db=new SpamDAO(new MongoQueryEngine());
         wco=new WordCounter();
@@ -30,20 +30,19 @@ public class SpamTraining {
     }
 
     public void addEmailId() {
-        db.insertSpamEmailID(mailContainExtractor.getEmailId(mail));
+        db.insertGeniuneEmailID(mailContainExtractor.getEmailId(mail));
     }
 
     public void addContain() {
-        wco=wc.process(mailContainExtractor.getBodyContantOfSpamEmail(mail));
+        wco=wc.process(mailContainExtractor.getBodyContantOfEmail(mail));
         map=wco.getWordCounter();
         Iterator<String> it=map.keySet().iterator();
         while (it.hasNext()) {
             String word = (String) it.next();
             Integer frequency=map.get(word);
             System.out.println(word+" "+frequency);
-            db.updateSpamFrequency(word, frequency);
+            db.updateGeniunFrequency(word, frequency);
         }
-
 
     }
 }

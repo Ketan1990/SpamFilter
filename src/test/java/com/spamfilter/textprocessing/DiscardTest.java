@@ -12,11 +12,12 @@ public class DiscardTest {
     @Test
     public void itShouldDiscardSpecialSymbol(){
         //given
-        String text="its! ok-dude $#%(^&)@";
-        String expected="its ok dude";
+        String text="this is@#$%% why $ $ working for me as well as you too";
+        String expected="this is why working for me as well as you too";
         Discard d=new Discard();
 
         //when
+
         String actual= d.discardSpecialSymbol(text);
         assertEquals(expected,actual);
         //then
@@ -27,13 +28,13 @@ public class DiscardTest {
     public void itShouldRemoveArticleAndConjunctions(){
         //given
 
-        String text="this is why where working for me as well as you too";
+        String text="this is why working for me as well as you too";
         String expected="working me you";
         Discard d=new Discard();
+        String actual1= d.discardSpecialSymbol(text);
 
         //when
-        String actual= d.discardConjunctionAndArticles(text);
-        System.out.println(actual);
+        String actual= d.discardConjunctionAndArticles(actual1);
         assertEquals(expected,actual);
         //then
 
