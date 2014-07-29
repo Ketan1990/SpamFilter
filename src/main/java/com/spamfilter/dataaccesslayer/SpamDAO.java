@@ -1,6 +1,6 @@
 package com.spamfilter.dataaccesslayer;
 
-import com.spamfilter.math.SpamProbability;
+import com.spamfilter.spammath.SpamProbability;
 
 /**
  * Created by ketan on 7/23/2014.
@@ -21,7 +21,7 @@ public class SpamDAO {
     }
 
     public double getProbability(String key) {
-        return queryEngine.getScalarValue(key, "Probability");
+        return queryEngine.getScalarValue(key, "probability");
     }
 
     public void updateSpamFrequency(String key, Integer value) {
@@ -42,12 +42,12 @@ public class SpamDAO {
 
     public void insertGeniuneEmailID(String id) {
         if(!isPresentGenuineId(id))
-            queryEngine.saveSingleValue("genuineEmailId", id);
+            queryEngine.saveSclarValue("genuineEmailId", id);
     }
 
     public void insertSpamEmailID(String id) {
         if(!isPresentSpamId(id))
-            queryEngine.saveSingleValue("spamEmailId", id);
+            queryEngine.saveSclarValue("spamEmailId", id);
     }
 
     public boolean isPresentGenuineId(String id) {

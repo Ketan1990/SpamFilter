@@ -26,7 +26,7 @@ public class MongoQueryEngine implements QueryEngine {
     }
 
     @Override
-    public void saveSingleValue(String key, String value) {
+    public void saveSclarValue(String key, String value) {
         MongoQuery.insert(key,value);
     }
 
@@ -43,20 +43,17 @@ public class MongoQueryEngine implements QueryEngine {
   private static class MongoQuery {
        public static void updateWord(String word, String attribute,Double frequency,Double prob) {
            query=getQuery(word);
-           count=setFrequency(attribute, frequency);
-           probability=setProbability(prob);
+           count=setValue(attribute, frequency,"$inc");
+           probability=setValue("probability",prob,"$set");
            MongoConfig.getCollection("words").update(query, count,true,false);
            MongoConfig.getCollection("words").update(query, probability,true,false);
        }
-       public static BasicDBObject setProbability(Double prob) {
-           return makeDocument().append("$set", makeDocument()
-                   .append("probability", prob));
-       }
 
-       private static BasicDBObject  setFrequency(String attribute, Double sFrequency) {
-           return makeDocument().append("$inc", makeDocument()
-                   .append(attribute, sFrequency));
-       }
+      private static BasicDBObject  setValue(String attribute, Double value,String operator ) {
+          return makeDocument().append(operator , makeDocument()
+                  .append(attribute, value));
+      }
+
        private static BasicDBObject getQuery(String wordType) {
            return makeDocument().append("word", wordType);
        }
@@ -72,9 +69,10 @@ public class MongoQueryEngine implements QueryEngine {
            while(cursor.hasNext()) {
                DBObject obj = cursor.next();
                value = (Double)obj.get(subKey);
-               return  value!=null?value :0.0;
+               if(value!=null)
+                 return  value ;
            }
-           return subKey.equals("Probability")?1.0:0.0;
+           return 0.0;
        }
 
        public static void insert(String key, String id) {

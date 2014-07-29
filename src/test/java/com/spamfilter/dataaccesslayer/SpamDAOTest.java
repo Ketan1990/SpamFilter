@@ -12,16 +12,16 @@ import static org.junit.Assert.assertTrue;
  * Created by ketan on 7/23/2014.
  */
 public class SpamDAOTest {
-   private  QueryEngine queryEngine = new MockQueryEngine();
+   private  QueryEngine queryEngine = new MongoQueryEngine();
 
     @Test
     public void itShouldGetSpamFreqeuncyForGivenWord() {
         //given
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
-        double actual = spamdao.getSpamFrequencyCount("someword");
+        double actual = spamdao.getSpamFrequencyCount("so");
         //then
-        assertEquals(1, actual,0.0);
+        assertEquals(1.0,actual,0.0);
     }
     @Test
     public void itShouldGetGeniunFreqeuncyForGivenWord() {
@@ -29,7 +29,7 @@ public class SpamDAOTest {
         QueryEngine queryEngine = new MockQueryEngine();
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
-        double actual = spamdao.getGenuinFrequencyCount("someword");
+        double actual = spamdao.getGenuinFrequencyCount("soword");
         //then
         assertEquals(0.33, actual,0.0);
     }
@@ -38,9 +38,9 @@ public class SpamDAOTest {
         //given
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
-        double actual = spamdao.getProbability("someword");
+        double actual = spamdao.getProbability("so");
         //then
-        assertEquals(0.33, actual,0);
+        assertEquals(1.0, actual,0);
     }
     @Test
     public void itShouldUpdateWithSpamWord(){
@@ -49,7 +49,7 @@ public class SpamDAOTest {
 
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
-        spamdao.updateSpamFrequency("so",14);
+        spamdao.updateSpamFrequency("so",12);
         //then
 
 

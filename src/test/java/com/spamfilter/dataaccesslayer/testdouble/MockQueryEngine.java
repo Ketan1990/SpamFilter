@@ -32,7 +32,7 @@ public class MockQueryEngine implements QueryEngine {
     }
 
     @Override
-    public void saveSingleValue(String caption, String id) {
+    public void saveSclarValue(String caption, String id) {
         this.caption=caption;
         this.id=id;
 

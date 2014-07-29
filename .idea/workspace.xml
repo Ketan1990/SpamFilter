@@ -11,6 +11,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/spamfilter1$HtmlRemovalTest_itShulaRemoveHtmlContent.coverage" NAME="HtmlRemovalTest.itShulaRemoveHtmlContent Coverage Results" MODIFIED="1406058062516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.spamfilter.htmlparser.*</FILTER>
@@ -40,57 +45,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/Test1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/StopWords.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/StopWord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/resources/stopwords.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/EmailHeader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/TestOne.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/emailHeadeRemove/Remove.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/resources/one.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/resources/spamHeaders.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/emailHeadeRemove/EmailHeaderRemove.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/htmlparser/removeHtml.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/opreation/Finding.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/emailHeadeRemove/RemoveBasicHeaderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/htmlparser/HtmlRemovalTest.java" />
-        <option value="E:/spamfilter_v1.0/src/test/java/com/mongodb/factory/MongoFactoryTest.java" />
-        <option value="E:/spamfilter_v1.0/src/main/java/com/mongodb/factory/MongoFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/MongoConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/MongoConfigTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/mongo/MongoQueryEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/Mongo/MongoConfig.java" />
-        <option value="E:/spamfilter_v1.0/src/main/java/com/mongodb/dao/MongoQueryEngine.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/mongo/MongoQueryEngineTest.java" />
-        <option value="E:/spamfilter_v1.0/src/test/java/com/mongodb/dao/SpamDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/QueryEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/Mongo/MongoQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/Mongo/MongoQueryEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/SpamDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/testdoube/MockQueryEngine.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/math/SpamProbabilityTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/math/SpamProbability.java" />
-        <option value="E:/spamfilter_v1.0/src/test/java/com/mongodb/dao/testdouble/MockQueryEngine.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/testdouble/MockQueryEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/emailtraining/SpamTraining.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/opreation/FileListing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/opreation/ListOfFiles.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/opreation/FileListing.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/opreation/FileListingTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/SpamDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/emailtraining/SpamEmailTraining.java" />
-        <option value="E:/spamfilter_v1.0/src/main/java/com/spamfilter/services/training/Training.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/textprocessing/TextProcessingTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/Discard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/textprocessing/DiscardTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/TextProcessing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/SpamDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/emailtraining/Training.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/emailtraining/GenuineTraining.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/MailContainExtractor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/textprocessing/MailContainExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/emailtraining/TrainingTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/datastructures/ArrangeSetOFProbabilityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/stringutility/Separatore.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/stringutility/MailContainExtractorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/stringutility/SeparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/SpamTextProcess.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/TextProcessingTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/WordContsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/EmailHeaderRemoverTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/HtmlRemovalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/WordCounter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/DescendiingOrderOfSpamProbability.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/stringutility/WordsRemover.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/stringutility/StringFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/stringutility/Stringutility.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/stringutility/StringUtilityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/stringutility/StringUtility.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/stringutility/WordsRemovalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/stringutility/MailContainExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/EmailHeaderRemover.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/WordCounts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/stringutility/StopWordsFilter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/stringutility/StopWordsFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/labelemailtraining/TrainingTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/TotalSpamProbability.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/SpamClassification.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/SetOfUniqueWord.java" />
+        <option value="E:/spamfilter_v1.0/src/main/java/com/spamfilter/operations/classification/FinalProbablity.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/SetOfUniqueWordTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spamclassification/SetOfUniqueWord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spamclassification/DupicateWordFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spamclassification/DuplicateWordFilter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/DuplicateWOrdFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/datastructures/RelevantOrderOfWordTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/RelevantOrderOfWord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/CompareMapWithValue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/FinalProbability.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/TotalSpamProbabilityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spamclassification/TotalSpamProbability.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/MailContainExtractor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/SpamClassificationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/spamclassification/FinalProbabilityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spamclassification/FinalProbability.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spamclassification/SpamClassification.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/spam/spamclassification/FinalProbabilityTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/spam/labelemailtraining/TrainingTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/StopWordsFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/utility/StringUtility.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/utility/StringUtilityTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spamfilter/spam/spamclassification/SpamClassificationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/spam/spamclassification/SpamClassification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spamfilter/spam/spamclassification/FinalProbability.java" />
       </list>
     </option>
   </component>
@@ -255,6 +260,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,67 +279,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spamfilter1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpamFilter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spamfilter1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpamFilter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spamfilter1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpamFilter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spamfilter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -354,13 +301,13 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/cmd/gitk.cmd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistoryKey" value="message.&#9;null&#9;null&#10;message.propert&#9;null&#9;null&#10;message.p&#9;null&#9;null" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
   </component>
@@ -371,6 +318,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.spamfilter.dataaccesslayer" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\spamprojct" />
       <recent name="F:\spamprojct\src\main\java\com\spamfilter" />
@@ -378,11 +328,11 @@
       <recent name="F:\spamprojct\src" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="spamclassification" />
+      <recent name="com.spamfilter.datastructures" />
       <recent name="com.spamfilter.emailtraining" />
       <recent name="com.spamfilter.opreation" />
       <recent name="main.java.com.spamfilter.emailHeadeRemove" />
-      <recent name="test.java.com.spamfilter.emailHeadeRemove" />
-      <recent name="main.java.com.spamfilter.textprocessing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\spamprojct\lib" />
@@ -392,26 +342,110 @@
       <recent name="F:\spamprojct\src\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.spamfilter.dataaccesslayer.testdoube" />
-      <recent name="com.spamfilter.dataaccesslayer" />
-      <recent name="com.spamfilter.dataaccesslayer.mongo" />
-      <recent name="com.spamfilter.dataaccesslayer.Mongo" />
-      <recent name="com.spamfilter.opreation" />
+      <recent name="com.spamfilter.utility" />
+      <recent name="com.spamfilter.spammath" />
+      <recent name="com.spamfilter.spam.math" />
+      <recent name="com.spamfilter.spam" />
+      <recent name="com.spamfilter" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrainingTest.itShouldTrainGDatabase">
-    <configuration default="false" name="TrainingTest.itShouldTrainSpamDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SpamClassificationTest.shouldCheckWhetherMailIsSpam">
+    <configuration default="false" name="SpamClassificationTest.shouldCheckWhetherMailIsSpam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.spamfilter.emailtraining.*" />
+          <option name="PATTERN" value="com.spamfilter.spam.spamclassification.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="spamprojct" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.spamfilter.emailtraining" />
-      <option name="MAIN_CLASS_NAME" value="com.spamfilter.emailtraining.TrainingTest" />
+      <option name="PACKAGE_NAME" value="com.spamfilter.spam.spamclassification" />
+      <option name="MAIN_CLASS_NAME" value="com.spamfilter.spam.spamclassification.SpamClassificationTest" />
+      <option name="METHOD_NAME" value="shouldCheckWhetherMailIsSpam" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StringUtilityTest.itShouldDiscardSpecialSymbol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.spamfilter.utility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="spamprojct" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.spamfilter.utility" />
+      <option name="MAIN_CLASS_NAME" value="com.spamfilter.utility.StringUtilityTest" />
+      <option name="METHOD_NAME" value="itShouldDiscardSpecialSymbol" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TrainingTest.itShouldTrainGenuineDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.spamfilter.spam.labelemailtraining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="spamprojct" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.spamfilter.spam.labelemailtraining" />
+      <option name="MAIN_CLASS_NAME" value="com.spamfilter.spam.labelemailtraining.TrainingTest" />
+      <option name="METHOD_NAME" value="itShouldTrainGenuineDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TrainingTest.itShouldTrainSpamDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.spamfilter.spam.labelemailtraining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="spamprojct" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.spamfilter.spam.labelemailtraining" />
+      <option name="MAIN_CLASS_NAME" value="com.spamfilter.spam.labelemailtraining.TrainingTest" />
       <option name="METHOD_NAME" value="itShouldTrainSpamDatabase" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -428,103 +462,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TextProcessingTest.itShouldCountWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="StringUtilityTest.itShouldDiscardNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.spamfilter.textprocessing.*" />
+          <option name="PATTERN" value="com.spamfilter.utility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="spamprojct" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.spamfilter.textprocessing" />
-      <option name="MAIN_CLASS_NAME" value="com.spamfilter.textprocessing.TextProcessingTest" />
-      <option name="METHOD_NAME" value="itShouldCountWords" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MailContainExtractorTest.shouldExtractMessaggBodyFromGEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.spamfilter.textprocessing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="spamprojct" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.spamfilter.textprocessing" />
-      <option name="MAIN_CLASS_NAME" value="com.spamfilter.textprocessing.MailContainExtractorTest" />
-      <option name="METHOD_NAME" value="shouldExtractMessaggBodyFromGEmail" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MailContainExtractorTest.shouldExtractMessaggBodyFromEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.spamfilter.textprocessing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="spamprojct" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.spamfilter.textprocessing" />
-      <option name="MAIN_CLASS_NAME" value="com.spamfilter.textprocessing.MailContainExtractorTest" />
-      <option name="METHOD_NAME" value="shouldExtractMessaggBodyFromEmail" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TrainingTest.itShouldTrainGDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.spamfilter.emailtraining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="spamprojct" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.spamfilter.emailtraining" />
-      <option name="MAIN_CLASS_NAME" value="com.spamfilter.emailtraining.TrainingTest" />
-      <option name="METHOD_NAME" value="itShouldTrainGDatabase" />
+      <option name="PACKAGE_NAME" value="com.spamfilter.utility" />
+      <option name="MAIN_CLASS_NAME" value="com.spamfilter.utility.StringUtilityTest" />
+      <option name="METHOD_NAME" value="itShouldDiscardNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -754,19 +704,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainSpamDatabase" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TextProcessingTest.itShouldCountWords" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MailContainExtractorTest.shouldExtractMessaggBodyFromGEmail" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MailContainExtractorTest.shouldExtractMessaggBodyFromEmail" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainGDatabase" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SpamClassificationTest.shouldCheckWhetherMailIsSpam" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StringUtilityTest.itShouldDiscardSpecialSymbol" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainGenuineDatabase" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainSpamDatabase" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StringUtilityTest.itShouldDiscardNumbers" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainGDatabase" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MailContainExtractorTest.shouldExtractMessaggBodyFromGEmail" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MailContainExtractorTest.shouldExtractMessaggBodyFromEmail" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainSpamDatabase" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TextProcessingTest.itShouldCountWords" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SpamClassificationTest.shouldCheckWhetherMailIsSpam" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainGenuineDatabase" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TrainingTest.itShouldTrainSpamDatabase" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StringUtilityTest.itShouldDiscardSpecialSymbol" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StringUtilityTest.itShouldDiscardNumbers" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -805,11 +755,42 @@
       <workItem from="1406179803965" duration="1366000" />
       <workItem from="1406181217114" duration="17519000" />
       <workItem from="1406214613447" duration="749000" />
+      <workItem from="1406215415427" duration="687000" />
+      <workItem from="1406216154629" duration="177000" />
+      <workItem from="1406216659479" duration="1672000" />
+      <workItem from="1406218503900" duration="2789000" />
+      <workItem from="1406266570071" duration="20977000" />
+      <workItem from="1406353271355" duration="26086000" />
+      <workItem from="1406436377515" duration="33744000" />
+      <workItem from="1406551334139" duration="8533000" />
+      <workItem from="1406564795327" duration="2098000" />
+      <workItem from="1406609524740" duration="1613000" />
+      <workItem from="1406661403631" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130905000" />
+    <option name="totallyTimeSpent" value="229369000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -819,30 +800,59 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32736155" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24231333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -860,6 +870,40 @@
       <TodoPanelSettings />
     </option>
   </component>
+  <component name="VssConfiguration">
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="2" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="ANSWER_NEGATIVELY" value="false" />
+      <option name="ANSWER_POSITIVELY" value="false" />
+      <option name="RECURSIVE" value="false" />
+      <option name="VERSION" />
+    </GetOptions>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -870,363 +914,363 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/opreation/Remove.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/spam/labelemailtraining/SpamTraining.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6359102" vertical-offset="0" max-vertical-offset="401">
-          <caret line="16" column="4" selection-start-line="10" selection-start-column="2" selection-end-line="16" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="765">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/htmlparser/RemoveHtml.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42394015" vertical-offset="0" max-vertical-offset="401">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.6075269" vertical-offset="15159" max-vertical-offset="51867">
+          <caret line="963" column="19" selection-start-line="963" selection-start-column="19" selection-end-line="963" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/emailHeadeRemove/RemoveBasicHeaderTest.java">
+    <entry file="jar://$PROJECT_DIR$/lib/mongo-2.10.1.jar!/org/bson/BSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.35555556" vertical-offset="76" max-vertical-offset="561">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/StopWords.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/Mongo/MongoQueryEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5295082" vertical-offset="0" max-vertical-offset="610">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.45470086" vertical-offset="839" max-vertical-offset="1530">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/utility/TestOne.java">
+    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/operations/classification/TrainSpamGeniunDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3622951" vertical-offset="0" max-vertical-offset="610">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/Test1.java">
+    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/operations/classification/FinalSpamGeniunDetection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19508196" vertical-offset="0" max-vertical-offset="610">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/WordCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.055737704" vertical-offset="102" max-vertical-offset="731">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/RelevantOrderOfWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19508196" vertical-offset="0" max-vertical-offset="1292">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/htmlparser/HtmlRemovalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50163937" vertical-offset="0" max-vertical-offset="610">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/mongodb/factory/MongoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/mongo/MongoConfigTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4180328" vertical-offset="0" max-vertical-offset="610">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/mongo/MongoQueryEngineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3065574" vertical-offset="0" max-vertical-offset="610">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/mongodb/dao/MongoQueryEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="835" max-vertical-offset="1445">
-          <caret line="90" column="5" selection-start-line="87" selection-start-column="4" selection-end-line="90" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/mongodb/dao/QueryEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/test/java/com/mongodb/factory/MongoFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51952463" vertical-offset="0" max-vertical-offset="589">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="170">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/mongodb/dao/SpamDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/test/java/com/mongodb/dao/SpamDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8819672" vertical-offset="1162" max-vertical-offset="1819">
-          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/utility/mathutility/MathOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5087282" vertical-offset="0" max-vertical-offset="401">
-          <caret line="12" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/math/SpamProbability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3622951" vertical-offset="0" max-vertical-offset="610">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3553719" vertical-offset="41" max-vertical-offset="2567">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/math/SpamProbabilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44590163" vertical-offset="0" max-vertical-offset="610">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/test/java/com/mongodb/dao/testdouble/MockQueryEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1088">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/testdouble/MockQueryEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6359102" vertical-offset="51" max-vertical-offset="986">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/Mongo/MongoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4189526" vertical-offset="19" max-vertical-offset="714">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/services/training/SpamTraining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="714">
-          <caret line="43" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/services/training/GeniuneTraining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7456359" vertical-offset="92" max-vertical-offset="799">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/opreation/FileListing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="544">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/test/java/com/spamfilter/utility/ListOfFilesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="425">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/opreation/FileListingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67105263" vertical-offset="102" max-vertical-offset="510">
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/SpamDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49127182" vertical-offset="1554" max-vertical-offset="1955">
-          <caret line="109" column="24" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/QueryEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/services/training/Training.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/dataaccesslayer/SpamDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="952">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1955">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/test/java/com/spamfilter/services/training/TrainingTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/spam/WordCounterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.38950276" vertical-offset="80" max-vertical-offset="697">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/TextProcessing.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="561">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.3922077" vertical-offset="790" max-vertical-offset="38828">
+          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/textprocessing/TextProcessingTest.java">
+    <entry file="file://$PROJECT_DIR$/testmails/TRAIN_00011.eml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42394015" vertical-offset="0" max-vertical-offset="476">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3589" max-vertical-offset="4046">
+          <caret line="231" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/textprocessing/DiscardTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/utility/HtmlRemovalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87281793" vertical-offset="160" max-vertical-offset="799">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        <state vertical-scroll-proportion="7.22043" vertical-offset="0" max-vertical-offset="2975">
+          <caret line="158" column="29" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/Discard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/HtmlRemover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024937656" vertical-offset="228" max-vertical-offset="833">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/Separatore.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/spam/WordCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2543641" vertical-offset="0" max-vertical-offset="401">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0025974025" vertical-offset="271" max-vertical-offset="731">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/utility/MailContainExtractorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37845305" vertical-offset="16" max-vertical-offset="1207">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/EmailHeaderFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42265195" vertical-offset="0" max-vertical-offset="362">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/spam/WordContsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="493">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/spam/WordCounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33766234" vertical-offset="91" max-vertical-offset="476">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/utility/StopWordsFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44155845" vertical-offset="0" max-vertical-offset="527">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/utility/EmailHeaderRemoverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63116884" vertical-offset="250" max-vertical-offset="714">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="13.049351" vertical-offset="11483" max-vertical-offset="16881">
+          <caret line="1040" column="0" selection-start-line="1040" selection-start-column="0" selection-end-line="1040" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/spamfilter_v1.0/src/test/java/com/spamfilter/operations/classification/DetectSpamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61049724" vertical-offset="0" max-vertical-offset="362">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/fileopreation/FileReadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/utility/DuplicateWOrdFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5584416" vertical-offset="74" max-vertical-offset="544">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.165746" vertical-offset="11559" max-vertical-offset="85085">
+          <caret line="410" column="19" selection-start-line="410" selection-start-column="19" selection-end-line="410" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/datastructures/RelevantOrderOfWordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62983423" vertical-offset="231" max-vertical-offset="646">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/CompareMapWithValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/Mongo/MongoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1878453" vertical-offset="153" max-vertical-offset="714">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/spamfilter_v1.0/src/test/java/com/spamfilter/operations/classification/FinalProbablityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7064935" vertical-offset="0" max-vertical-offset="385">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/operations/classification/DetectSpam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35324675" vertical-offset="0" max-vertical-offset="385">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/spam/math/TotalSpamProbabilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46961325" vertical-offset="68" max-vertical-offset="527">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/operations/classification/FinalProbablity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6712707" vertical-offset="794" max-vertical-offset="1156">
+          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/spammath/TotalSpamProbability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6207792" vertical-offset="50" max-vertical-offset="459">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/fileopreation/FileRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33246753" vertical-offset="76" max-vertical-offset="884">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testmails/TRAIN_00007.eml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1071">
+          <caret line="42" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmailstest/508102099.RPBLNBTE.36445.635320417278915000@GEN2.center.com.eml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09742121" vertical-offset="612" max-vertical-offset="2057">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/MailContainExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.233871" vertical-offset="204" max-vertical-offset="833">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/datastructures/RelevantOrderOfWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64155847" vertical-offset="263" max-vertical-offset="765">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/DuplicateWordFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="561">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmailstest/CAO1uGr7g23Q1Hn4FqnHmdRacpc=5pzn44fTuBe6OCKADAQcNfg@mail.gmail.com.eml">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.090909" vertical-offset="650" max-vertical-offset="1343">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/StringUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="969">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/utility/StringUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16103896" vertical-offset="363" max-vertical-offset="748">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/StopWordsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75064933" vertical-offset="0" max-vertical-offset="510">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/utility/StopWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08831169" vertical-offset="0" max-vertical-offset="425">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/spam/labelemailtraining/TrainingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6025974" vertical-offset="40" max-vertical-offset="459">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/SpamDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1071">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1071">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/dataaccesslayer/Mongo/MongoQueryEngine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/spam/spamclassification/FinalProbability.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6608479" vertical-offset="585" max-vertical-offset="1496">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.7350649" vertical-offset="448" max-vertical-offset="833">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/utility/ListOfFiles.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/spam/spamclassification/FinalProbabilityTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044736844" vertical-offset="85" max-vertical-offset="476">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.24935065" vertical-offset="142" max-vertical-offset="782">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/study/spamfilter versions/spamfilter_v1.0/src/main/java/com/spamfilter/utility/MailContain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/spam/spamclassification/SpamClassification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="14" column="26" selection-start-line="12" selection-start-column="8" selection-end-line="14" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.51428574" vertical-offset="346" max-vertical-offset="1258">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/spamfilter_v1.0/src/main/java/com/spamfilter/utility/MailContain.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/spam/spamclassification/SpamClassificationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0515463" vertical-offset="0" max-vertical-offset="884">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.40591398" vertical-offset="70" max-vertical-offset="544">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/emailtraining/SpamTraining.java">
+    <entry file="file://$PROJECT_DIR$/src/testfile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="901">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmailstest/d812f8ca-71ca-403b-b202-503d2f6be4c6@xtnvmta4116.xt.local.eml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9078">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/textprocessing/MailContainExtractorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7" vertical-offset="550" max-vertical-offset="1020">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/textprocessing/MailContainExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91494846" vertical-offset="325" max-vertical-offset="901">
-          <caret line="44" column="74" selection-start-line="44" selection-start-column="74" selection-end-line="44" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/emailtraining/GenuineTraining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29675812" vertical-offset="493" max-vertical-offset="918">
-          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spamfilter/emailtraining/Training.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="884">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spamfilter/emailtraining/TrainingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08229426" vertical-offset="1" max-vertical-offset="493">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
