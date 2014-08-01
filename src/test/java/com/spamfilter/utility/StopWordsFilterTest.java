@@ -1,6 +1,5 @@
 package com.spamfilter.utility;
 
-import com.spamfilter.utility.StopWordsFilter;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -16,9 +15,9 @@ public class StopWordsFilterTest {
 
         String text="this is why working for me as well as you too";
         String expected="working me you";
-        StopWordsFilter d=new StopWordsFilter();
+
         //when
-        String actual= d.discardConjunctionAndArticles(text);
+        String actual= StopWordsFilter.discardConjunctionAndArticles(text);
         assertEquals(expected,actual);
         //then
 

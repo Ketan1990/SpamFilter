@@ -1,7 +1,9 @@
 package com.spamfilter.utility;
 
+
 import org.junit.Test;
-import static  org.junit.Assert.*;
+import static org.junit.Assert.*;
+
 /**
  * Created by Ketan on 7/20/2014.
  */

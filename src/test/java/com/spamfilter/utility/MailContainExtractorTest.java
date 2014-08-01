@@ -31,7 +31,7 @@ public class MailContainExtractorTest {
                 "\"Message-Id: <AF40EEDE-B65C-11D6-8F61-00039396ECF2@deersoft.com>\\n\" ";
         MailContainExtractor mt=new MailContainExtractor();
         String actual =mt.getMessageID(maildata);
-        System.out.println(actual);
+       // System.out.println(actual);
         assertEquals("AF40EEDE-B65C-11D6-8F61-00039396ECF2@deersoft.com",actual);
 
     }

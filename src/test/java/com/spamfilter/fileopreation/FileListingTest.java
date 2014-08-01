@@ -18,7 +18,7 @@ public class FileListingTest {
         expecteds.add("TRAIN_00007.eml");
 
         //when
-        LinkedList<String>actual=files.listOf("E:\\git\\SpamFilter\\testmails");
+        LinkedList<String>actual=files.listOf("E:\\git\\SpamFilter\\testmails\\spam");
         assertEquals(actual.getFirst(), expecteds.getFirst());
     }
 }

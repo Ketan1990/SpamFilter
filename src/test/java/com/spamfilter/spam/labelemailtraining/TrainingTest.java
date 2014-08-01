@@ -17,7 +17,7 @@ public class TrainingTest {
     }
     @Test
     public void itShouldTrainGenuineDatabase() {
-        training.trainGenuine("E:\\git\\SpamFilter\\gmailstest");
+        training.trainGenuine("E:\\git\\SpamFilter\\testmails\\gmailstest");
         assertNotNull(training);
     }
 }

@@ -1,7 +1,4 @@
 package com.spamfilter.utility;
-
-
-import com.spamfilter.utility.StringUtility;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
