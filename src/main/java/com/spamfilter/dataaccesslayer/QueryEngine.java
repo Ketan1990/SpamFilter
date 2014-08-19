@@ -9,4 +9,5 @@ public interface QueryEngine {
     void saveSclarValue(String key, String value);
     boolean isPresent(String key,String value);
     void remove(String key,String value);
+
 }

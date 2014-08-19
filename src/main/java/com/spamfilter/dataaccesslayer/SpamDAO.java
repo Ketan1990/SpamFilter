@@ -1,6 +1,7 @@
 package com.spamfilter.dataaccesslayer;
 
 import com.spamfilter.spammath.SpamProbability;
+import com.spamfilter.utility.DuplicateWordFilter;
 
 /**
  * Created by ketan on 7/23/2014.
@@ -66,6 +67,16 @@ public class SpamDAO {
         queryEngine.remove("genuineEmailId", id);
 
     }
+    public Double[] getAllProbability(String[] word) {
+        String[]spamwords= DuplicateWordFilter.uniqueWords(word);
+        Double[] finalprobabilty = new Double[spamwords.length];
+        for (int i = 0; i <spamwords.length; i++) {
+
+            finalprobabilty[i]=getProbability(word[i]);
+        }
+        return finalprobabilty;
+    }
+
 
 
 }

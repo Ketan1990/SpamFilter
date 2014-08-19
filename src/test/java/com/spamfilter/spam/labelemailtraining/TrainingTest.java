@@ -10,14 +10,14 @@ import static org.junit.Assert.assertNotNull;
 public class TrainingTest {
     Training training=new Training();
 
-    @Test
-    public void itShouldTrainSpamDatabase() {
-     training.trainSpam("E:\\spamfilter_v1.0\\spam");
-        assertNotNull(training);
-    }
-    @Test
-    public void itShouldTrainGenuineDatabase() {
-        training.trainGenuine("E:\\git\\SpamFilter\\testmails\\gmailstest");
-        assertNotNull(training);
-    }
+//    @Test
+//    public void itShouldTrainSpamDatabase() {
+//     training.trainSpam("E:\\spamfilter_v1.0\\spam");
+//        assertNotNull(training);
+//    }
+//    @Test
+//    public void itShouldTrainGenuineDatabase() {
+//        training.trainGenuine("E:\\git\\SpamFilter\\testmails\\gmailstest");
+//        assertNotNull(training);
+//    }
 }

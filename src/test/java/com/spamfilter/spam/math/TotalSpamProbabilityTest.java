@@ -9,9 +9,6 @@ import static org.junit.Assert.*;
  */
 public class TotalSpamProbabilityTest{
 
-
-
-
     @Test
     public void ItShouldCountTotalProb(){
         //given
@@ -19,8 +16,11 @@ public class TotalSpamProbabilityTest{
 
         Double actual=  TotalSpamProbability.calulate(t);
         System.out.println(actual);
-        Double expected=0.019041543566880002;
-        assertEquals(actual,expected);
+
+        Double expected=0.0017064568741761833;
+        System.out.println(Math.ceil(expected));
+        assertEquals(expected,actual);
+
 
     }
 }

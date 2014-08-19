@@ -14,18 +14,11 @@ public class FinalProbability {
     private SpamDAO spamDAO;
     private Double[] finalprobabilty;
 
-    public FinalProbability(){
-        spamDAO=new SpamDAO(new MongoQueryEngine());
+    public FinalProbability(SpamDAO spamDAO){
+        this.spamDAO=spamDAO;
     }
 
-    public Double[] fetchThem(String[] word) {
-       String[]spamwords= DuplicateWordFilter.uniqueWords(word);
-        finalprobabilty=new Double[spamwords.length];
-        for (int i = 0; i <spamwords.length; i++) {
-            finalprobabilty[i]=spamDAO.getProbability(spamwords[i]);
-        }
-        return finalprobabilty;
-    }
+
 
     public Double totalProbablity(Double[] probs) {
         Arrays.sort(probs);

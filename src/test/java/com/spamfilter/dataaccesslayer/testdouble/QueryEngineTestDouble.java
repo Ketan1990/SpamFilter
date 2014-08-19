@@ -5,7 +5,7 @@ import com.spamfilter.dataaccesslayer.QueryEngine;
 /**
  * Created by ketan on 7/23/2014.
  */
-public class MockQueryEngine implements QueryEngine {
+public class QueryEngineTestDouble implements QueryEngine {
     private String key;
     private String subkey;
     private Double value;

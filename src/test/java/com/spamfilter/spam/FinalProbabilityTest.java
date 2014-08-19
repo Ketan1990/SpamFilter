@@ -1,5 +1,9 @@
-package com.spamfilter.spam.spamclassification;
+package com.spamfilter.spam;
 
+import com.spamfilter.dataaccesslayer.QueryEngine;
+import com.spamfilter.dataaccesslayer.SpamDAO;
+import com.spamfilter.dataaccesslayer.testdouble.QueryEngineTestDouble;
+import com.spamfilter.spam.spamclassification.FinalProbability;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -8,17 +12,10 @@ import static org.junit.Assert.*;
  * Created by ketan on 7/27/2014.
  */
 public class FinalProbabilityTest {
-    @Test
-    public void itShouldFetchFinalProbaility(){
-        FinalProbability probability=new FinalProbability();
-        String[]proStrings={"happen","happen","below","it","those","all","wrote","in","few","you","ML"};
-        Double []actual=probability.fetchThem(proStrings);
-        Double[]expected={1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-        assertArrayEquals(expected, actual);
-    }
+
     @Test
     public void ItShouldCalculateTotalProbabiltyWhenSizeIsBelow10(){
-        FinalProbability probability=new FinalProbability();
+        FinalProbability probability=new FinalProbability(new SpamDAO(new QueryEngineTestDouble()));
         Double[]values={1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,1.0};
 
         Double actual= probability.totalProbablity(values);
@@ -28,7 +25,7 @@ public class FinalProbabilityTest {
     }
     @Test
     public void ItShouldCalculateTotalProbabiltyWhenSizeIsAbove10(){
-        FinalProbability probability=new FinalProbability();
+        FinalProbability probability=new FinalProbability(new SpamDAO(new QueryEngineTestDouble()));
         Double[]values={1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,1.0,0.765,0.865,0.987};
 
         Double actual= probability.totalProbablity(values);

@@ -1,22 +1,22 @@
 package com.spamfilter.dataaccesslayer;
 
 import com.spamfilter.dataaccesslayer.Mongo.MongoQueryEngine;
-import com.spamfilter.dataaccesslayer.testdouble.MockQueryEngine;
+import com.spamfilter.dataaccesslayer.testdouble.QueryEngineTestDouble;
+import com.spamfilter.spam.spamclassification.FinalProbability;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by ketan on 7/23/2014.
  */
 public class SpamDAOTest {
-   private  QueryEngine queryEngine = new MongoQueryEngine();
+   private  QueryEngine queryEngine = new QueryEngineTestDouble();
 
     @Test
     public void itShouldGetSpamFreqeuncyForGivenWord() {
         //given
+        QueryEngine queryEngine = new QueryEngineTestDouble();
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         double actual = spamdao.getSpamFrequencyCount("so");
@@ -26,7 +26,7 @@ public class SpamDAOTest {
     @Test
     public void itShouldGetGeniunFreqeuncyForGivenWord() {
         //given
-        QueryEngine queryEngine = new MockQueryEngine();
+        QueryEngine queryEngine = new QueryEngineTestDouble();
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         double actual = spamdao.getGenuinFrequencyCount("soword");
@@ -38,9 +38,10 @@ public class SpamDAOTest {
         //given
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
-        double actual = spamdao.getProbability("so");
+        Double actual = spamdao.getProbability("so");
         //then
-        assertEquals(1.0, actual,0);
+        Double expected=0.33;
+        assertEquals(expected, actual);
     }
     @Test
     public void itShouldUpdateWithSpamWord(){
@@ -111,5 +112,14 @@ public class SpamDAOTest {
         spamdao.removeGeniuneEmailID(id);
         //then
         	assertFalse(spamdao.isPresentSpamId(id));
+    }
+    @Test
+    public void itShouldFetchFinalProbaility(){
+        SpamDAO spamdao = new SpamDAO(queryEngine);
+        String[]proStrings={"do","enter","Best"};
+        Double []actual=spamdao.getAllProbability(proStrings);
+
+        Double[]expected={0.33,0.33, 0.33};
+        assertArrayEquals(expected, actual);
     }
 }
