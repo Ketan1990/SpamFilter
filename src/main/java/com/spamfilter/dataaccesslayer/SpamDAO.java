@@ -1,5 +1,7 @@
 package com.spamfilter.dataaccesslayer;
 
+import com.spamfilter.spam.EmailAddress;
+import com.spamfilter.spam.Word;
 import com.spamfilter.spam.spammath.SpamProbability;
 import com.spamfilter.utility.DuplicateWordFilter;
 
@@ -43,28 +45,29 @@ public class SpamDAO {
 
     public void insertGeniuneEmailID(String id) {
         if(!isPresentGenuineId(id))
-            queryEngine.saveSclarValue("genuineEmailId", id);
+            queryEngine.saveSclarValue(new EmailAddress("genuineEmailId", id));
     }
 
     public void insertSpamEmailID(String id) {
         if(!isPresentSpamId(id))
-            queryEngine.saveSclarValue("spamEmailId", id);
+            queryEngine.saveSclarValue(new EmailAddress("spamEmailId", id));
     }
 
     public boolean isPresentGenuineId(String id) {
-        return queryEngine.isPresent("genuineEmailId", id);
+
+        return queryEngine.isPresent(new EmailAddress("genuineEmailId", id));
     }
 
     public boolean isPresentSpamId(String id) {
-        return queryEngine.isPresent("spamEmailId", id);
+        return queryEngine.isPresent(new EmailAddress("spamEmailId", id));
     }
 
     public void removeSpamEmailID(String id) {
-        queryEngine.remove("spamEmailId", id);
+        queryEngine.remove(new EmailAddress("spamEmailId", id));
     }
 
     public void removeGeniuneEmailID(String id) {
-        queryEngine.remove("genuineEmailId", id);
+        queryEngine.remove(new EmailAddress("genuineEmailId", id));
 
     }
     public Double[] getAllProbability(String[] word) {

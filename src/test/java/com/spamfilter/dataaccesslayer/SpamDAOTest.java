@@ -1,35 +1,24 @@
 package com.spamfilter.dataaccesslayer;
+import com.spamfilter.dataaccesslayer.testdouble.QueryEngineTestDouble;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /*
-  Created by ketan on 7/23/2014.
-  */
+  Created by ketan on 7/23/2014.*/
 
 
 public class SpamDAOTest {
-   private  QueryEngine queryEngine=mock(QueryEngine.class);
+   private  QueryEngine queryEngine=new QueryEngineTestDouble();
 
 
     @Test
     public void itShouldGetSpamFreqeuncyForGivenWord() {
 
-        //given
-        queryEngine.saveScalarValues("so","spamcount",12.0,0.5);
-        SpamDAO spamdao = new SpamDAO(queryEngine);
-        //when
-        assertEquals(12.0,spamdao.getSpamFrequencyCount("so"),0.0);
-
-
     }
     @Test
     public void itShouldGetGeniunFreqeuncyForGivenWord() {
-        //given
-        SpamDAO spamdao = new SpamDAO(queryEngine);
-        //when
-        when(spamdao.getSpamFrequencyCount("so")).thenReturn(1.0);
+
 
     }
     @Test
@@ -67,13 +56,13 @@ public class SpamDAOTest {
         //when
         spamdao.insertGeniuneEmailID(id);
         //then
-        assertTrue(spamdao.isPresentSpamId(id));
+        assertTrue(spamdao.isPresentGenuineId(id));
+
     }
     @Test
     public void itShouldStoreSpamEmailId() {
         //give
-        QueryEngine queryEngine1= mock(QueryEngine.class);
-        SpamDAO spamdao = new SpamDAO(queryEngine1);
+        SpamDAO spamdao = new SpamDAO(queryEngine);
         String id="rocky.jain@gmail.com";
         //when
         spamdao.insertSpamEmailID(id);
@@ -86,6 +75,7 @@ public class SpamDAOTest {
         SpamDAO spamdao = new SpamDAO(queryEngine);
         String id="rocky.jain@gmail.com";
         //when
+        spamdao.insertSpamEmailID(id);
         spamdao.removeSpamEmailID(id);
         //then
         assertFalse(spamdao.isPresentSpamId(id));
@@ -96,6 +86,7 @@ public class SpamDAOTest {
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         String id="rocky.jain@gmail.com";
+        spamdao.insertGeniuneEmailID(id);
         spamdao.removeGeniuneEmailID(id);
         //then
       assertFalse(spamdao.isPresentSpamId(id));

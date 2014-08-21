@@ -1,6 +1,10 @@
 package com.spamfilter.dataaccesslayer.testdouble;
 
 import com.spamfilter.dataaccesslayer.QueryEngine;
+import com.spamfilter.spam.EmailAddress;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by ketan on 7/23/2014.
@@ -14,6 +18,10 @@ public class QueryEngineTestDouble implements QueryEngine {
     private Double value2;
     private String caption;
     private String id;
+    private List<EmailAddress> emailAddressList;
+    public QueryEngineTestDouble(){
+        emailAddressList=new LinkedList<EmailAddress>();
+    }
 
     @Override
     public double getScalarValue(String key, String subkey) {
@@ -34,19 +42,29 @@ public class QueryEngineTestDouble implements QueryEngine {
     }
 
     @Override
-    public void saveSclarValue(String caption, String id) {
-
+    public void saveSclarValue(EmailAddress emailAddress) {
+        emailAddressList.add(emailAddress);
     }
 
     @Override
-    public boolean isPresent(String caption, String id) {
-        if(this.id!=null)
-            return true;
+    public boolean isPresent(EmailAddress emailAddress) {
+        for (EmailAddress emailAddress1:emailAddressList){
+            if(emailAddress.equals(emailAddress1)){
+                return true;
+            }
+        }
         return false;
     }
 
     @Override
-    public void remove(String key, String value) {
+    public void remove(EmailAddress emailAddress) {
+        for (EmailAddress emailAddress1:emailAddressList){
+            if(emailAddress.equals(emailAddress1))
+                emailAddressList.remove(emailAddress);
+        }
 
     }
+
+
+
 }

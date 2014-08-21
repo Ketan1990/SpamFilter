@@ -30,7 +30,11 @@ public class EmailTraining {
         this.type=type;
         if(this.type==EmailType.spamMail) {
             spamDAO.insertSpamEmailID(MailContainExtractor.getSenderId(mailContent));
-        }
+        }else if(this.type==EmailType.Geniune)
         spamDAO.insertGeniuneEmailID(MailContainExtractor.getSenderId(mailContent));
+    }
+
+    public void messageBody(EmailType spamMail) {
+
     }
 }
