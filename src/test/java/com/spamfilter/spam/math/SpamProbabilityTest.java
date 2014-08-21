@@ -1,6 +1,6 @@
 package com.spamfilter.spam.math;
 
-import com.spamfilter.spammath.SpamProbability;
+import com.spamfilter.spam.spammath.SpamProbability;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

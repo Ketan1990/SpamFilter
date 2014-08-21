@@ -1,9 +1,7 @@
 package com.spamfilter.spam.spamclassification;
 
-import com.spamfilter.dataaccesslayer.Mongo.MongoQueryEngine;
 import com.spamfilter.dataaccesslayer.SpamDAO;
-import com.spamfilter.spammath.TotalSpamProbability;
-import com.spamfilter.utility.DuplicateWordFilter;
+import com.spamfilter.spam.spammath.TotalSpamProbability;
 
 import java.util.Arrays;
 

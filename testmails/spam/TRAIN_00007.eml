@@ -34,8 +34,7 @@ X-Spam-Status: No, hits=-5.6 required=7.0
 	tests=EMAIL_ATTRIBUTION,FORGED_RCVD_TRAIL,IN_REP_TO,
 	      QUOTED_EMAIL_TEXT,SPAM_PHRASE_00_01,USER_AGENT_APPLEMAIL
 	version=2.40-cvs
-X-Spam-Level: 
-
+X-Spam-Level:
 I never claimed it could learn *all* combinatorial 
 possibilities, but it certainly can learn some.
 

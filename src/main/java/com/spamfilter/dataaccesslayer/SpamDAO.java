@@ -1,6 +1,6 @@
 package com.spamfilter.dataaccesslayer;
 
-import com.spamfilter.spammath.SpamProbability;
+import com.spamfilter.spam.spammath.SpamProbability;
 import com.spamfilter.utility.DuplicateWordFilter;
 
 /**
@@ -76,7 +76,5 @@ public class SpamDAO {
         }
         return finalprobabilty;
     }
-
-
 
 }

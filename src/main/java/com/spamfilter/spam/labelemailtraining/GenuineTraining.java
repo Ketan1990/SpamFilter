@@ -1,6 +1,6 @@
 package com.spamfilter.spam.labelemailtraining;
 
-import com.spamfilter.dataaccesslayer.Mongo.MongoQueryEngine;
+import com.spamfilter.dataaccesslayer.QueryEngine;
 import com.spamfilter.dataaccesslayer.SpamDAO;
 import com.spamfilter.spam.WordCounter;
 import com.spamfilter.spam.WordCounts;
@@ -14,15 +14,17 @@ import java.util.Map;
  * Created by ketan on 7/24/2014.
  */
 public class GenuineTraining {
+    private final QueryEngine queryEngine;
     private String mail;
     private SpamDAO db;
     private WordCounter wco;
     private WordCounts wc;
     private Map<String, Integer> map;
     private MailContainExtractor mailContainExtractor;
-    public GenuineTraining(String mail) {
+    public GenuineTraining(QueryEngine queryEngine,String mail) {
         this.mail=mail;
-        db=new SpamDAO(new MongoQueryEngine());
+        this.queryEngine=queryEngine;
+        db=new SpamDAO(queryEngine);
         wco=new WordCounter();
         wc=new WordCounts();
         map=new HashMap<String,Integer>();
@@ -34,7 +36,7 @@ public class GenuineTraining {
     }
 
     public void addContain() {
-        wco=wc.counts(mailContainExtractor.getBodyContantOfEmail(mail));
+        wco=wc.counts(mailContainExtractor.getMessageContent(mail));
         map=wco.getWordCounter();
         Iterator<String> it=map.keySet().iterator();
         while (it.hasNext()) {

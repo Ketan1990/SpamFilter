@@ -6,6 +6,8 @@ import com.spamfilter.dataaccesslayer.QueryEngine;
  * Created by ketan on 7/23/2014.
  */
 public class QueryEngineTestDouble implements QueryEngine {
+    public static final double spamf = 1.0;
+    public static final double geniunf = 2.0;
     private String key;
     private String subkey;
     private Double value;
@@ -16,9 +18,9 @@ public class QueryEngineTestDouble implements QueryEngine {
     @Override
     public double getScalarValue(String key, String subkey) {
         if (subkey.equals("spamFrequency")) {
-            return 1.0;
+            return spamf;
         }else if (subkey.equals("geniunFrequecy")) {
-            return 2.0;
+            return geniunf;
         }
         return 0.33;
     }
@@ -33,8 +35,6 @@ public class QueryEngineTestDouble implements QueryEngine {
 
     @Override
     public void saveSclarValue(String caption, String id) {
-        this.caption=caption;
-        this.id=id;
 
     }
 

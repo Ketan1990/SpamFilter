@@ -6,7 +6,7 @@ package com.spamfilter.utility;
 public class EmailHeaderFilter {
 
   public static String removeHeader(String mailData) {
-            return StringUtility.matchingWordRemove("(^[^\\s].*:.+\n.+\n.+$)+", mailData);
+            return StringUtility.matchingWordRemove("(^[^\\s].*:.+\n.+\n.+$)+", mailData).trim();
 
     }
 

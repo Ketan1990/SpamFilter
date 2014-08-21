@@ -1,6 +1,7 @@
 package com.spamfilter.utility;
 
 
+import com.spamfilter.fileopreation.FileRead;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -30,36 +31,37 @@ public class MailContainExtractorTest {
                 "\"In-Reply-To: <oydit2248oi.fsf@bert.cs.rice.edu>\\n\" +\n" +
                 "\"Message-Id: <AF40EEDE-B65C-11D6-8F61-00039396ECF2@deersoft.com>\\n\" ";
         MailContainExtractor mt=new MailContainExtractor();
-        String actual =mt.getMessageID(maildata);
+        String actual =MailContainExtractor.getMessageID(maildata);
        // System.out.println(actual);
         assertEquals("AF40EEDE-B65C-11D6-8F61-00039396ECF2@deersoft.com",actual);
 
     }
     @Test
-    public void shouldExtractMessaggBodyFromEmail()   {
-        String maildata=  "Content-Transfer-Encoding: 7bit\n" +
+    public void shouldExtractMessaggBodyFromSpamEmail()   {
+        String maildata="To: Scott A Crosby <scrosby@cs.rice.edu>\n" +
+                "From: \"Craig R.Hughes\" <craig@deersoft.com>\n" +
+                "In-Reply-To: <oydit2248oi.fsf@bert.cs.rice.edu>\n" +
+                "Message-Id: <AF40EEDE-B65C-11D6-8F61-00039396ECF2@deersoft.com>\n" +
+                "Content-Transfer-Encoding: 7bit\n" +
                 "X-Mailer: Apple Mail (2.482)\n" +
                 "X-Pyzor: Reported 0 times.\n" +
-                "I never claimed it could learn *all* combinatorial \n" +
-                "possibilities, but it certainly can learn some.\n" ;
+                "X-Spam-Status: No, hits=-5.6 required=7.0\n" +
+                "\ttests=EMAIL_ATTRIBUTION,FORGED_RCVD_TRAIL,IN_REP_TO,\n" +
+                "I never claimed it could learn *all* combinatorial possibilities, but it certainly can learn some." ;
+
+        String actual =MailContainExtractor.getMessageContent(maildata);
         String expected="I never claimed it could learn *all* combinatorial possibilities, but it certainly can learn some.";
-        String actual =MailContainExtractor.getBodyContantOfSpamEmail(maildata);
-        //    System.out.println(actual);
         assertEquals(expected,actual);
     }
     @Test
-    public void shouldExtractMessaggBodyFromG_Email()   {
-
+    public void shouldExtractMessaggBodyFromGeniune_Email()   {
         String maildata="From:ketan jain <jain.ketan2008@gmail.com>\n" +
                 "To:rockexample123@gmail.com\n" +
                 "Content-Type:multipart/alternative; boundary=001a11c16daa1b59d404f532bb31\n" +
                 "Bodycontent:Sat Mar 22 19:52:23 IST 2014\n" +
-                "Content:\n" +
-                "Kavita has invited you to join Websol Affiliates\n" +
-                "if intersted you can join her Click here to";
+                "Content:Kavita has invited you to join Websol Affiliates if intersted you can join her Click here to";
         String expected="Kavita has invited you to join Websol Affiliates if intersted you can join her Click here to";
-        String actual =(MailContainExtractor.getBodyContantOfEmail(maildata)).trim();
-       // System.out.println(actual);
+        String actual =(MailContainExtractor.getMessageContent(maildata));
         assertEquals(expected,actual);
 
     }

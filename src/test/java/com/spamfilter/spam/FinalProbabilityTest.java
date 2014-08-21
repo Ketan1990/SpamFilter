@@ -29,7 +29,7 @@ public class FinalProbabilityTest {
         Double[]values={1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,1.0,0.765,0.865,0.987};
 
         Double actual= probability.totalProbablity(values);
-        Double expected=0.653122575;
+        Double expected=0.6;
         assertEquals(expected,actual);
 
     }

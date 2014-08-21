@@ -1,37 +1,36 @@
 package com.spamfilter.dataaccesslayer;
-
-import com.spamfilter.dataaccesslayer.Mongo.MongoQueryEngine;
-import com.spamfilter.dataaccesslayer.testdouble.QueryEngineTestDouble;
-import com.spamfilter.spam.spamclassification.FinalProbability;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
-/**
- * Created by ketan on 7/23/2014.
- */
+/*
+  Created by ketan on 7/23/2014.
+  */
+
+
 public class SpamDAOTest {
-   private  QueryEngine queryEngine = new QueryEngineTestDouble();
+   private  QueryEngine queryEngine=mock(QueryEngine.class);
+
 
     @Test
     public void itShouldGetSpamFreqeuncyForGivenWord() {
+
         //given
-        QueryEngine queryEngine = new QueryEngineTestDouble();
+        queryEngine.saveScalarValues("so","spamcount",12.0,0.5);
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
-        double actual = spamdao.getSpamFrequencyCount("so");
-        //then
-        assertEquals(1.0,actual,0.0);
+        assertEquals(12.0,spamdao.getSpamFrequencyCount("so"),0.0);
+
+
     }
     @Test
     public void itShouldGetGeniunFreqeuncyForGivenWord() {
         //given
-        QueryEngine queryEngine = new QueryEngineTestDouble();
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
-        double actual = spamdao.getGenuinFrequencyCount("soword");
-        //then
-        assertEquals(0.33, actual,0.0);
+        when(spamdao.getSpamFrequencyCount("so")).thenReturn(1.0);
+
     }
     @Test
     public void itShouldGetProbabilityForGivenWord() {
@@ -46,44 +45,35 @@ public class SpamDAOTest {
     @Test
     public void itShouldUpdateWithSpamWord(){
         //given
-        QueryEngine queryEngine = new MongoQueryEngine();
 
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         spamdao.updateSpamFrequency("so",12);
         //then
-
-
-
     }
     @Test
     public void itShouldUpdateWithGenuincount(){
         //given
-          QueryEngine queryEngine = new MongoQueryEngine();
-
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         spamdao.updateGeniunFrequency("so",4);
         //then
-
     }
     @Test
     public void itShouldStoreGeniuneEmailId() {
         //give
-          QueryEngine queryEngine = new MongoQueryEngine();
-
         SpamDAO spamdao = new SpamDAO(queryEngine);
         String id="ketan.jain@gmail.com";
         //when
         spamdao.insertGeniuneEmailID(id);
         //then
-        assertTrue(spamdao.isPresentGenuineId(id));
+        assertTrue(spamdao.isPresentSpamId(id));
     }
     @Test
     public void itShouldStoreSpamEmailId() {
         //give
-
-        SpamDAO spamdao = new SpamDAO(queryEngine);
+        QueryEngine queryEngine1= mock(QueryEngine.class);
+        SpamDAO spamdao = new SpamDAO(queryEngine1);
         String id="rocky.jain@gmail.com";
         //when
         spamdao.insertSpamEmailID(id);
@@ -93,8 +83,6 @@ public class SpamDAOTest {
     @Test
     public void itShouldRemoveSpamEmailId() {
         //give
-
-
         SpamDAO spamdao = new SpamDAO(queryEngine);
         String id="rocky.jain@gmail.com";
         //when
@@ -105,20 +93,18 @@ public class SpamDAOTest {
     @Test
     public void itShouldRemoveGeniuneEmailId() {
         //give
-
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         String id="rocky.jain@gmail.com";
         spamdao.removeGeniuneEmailID(id);
         //then
-        	assertFalse(spamdao.isPresentSpamId(id));
+      assertFalse(spamdao.isPresentSpamId(id));
     }
     @Test
     public void itShouldFetchFinalProbaility(){
         SpamDAO spamdao = new SpamDAO(queryEngine);
         String[]proStrings={"do","enter","Best"};
         Double []actual=spamdao.getAllProbability(proStrings);
-
         Double[]expected={0.33,0.33, 0.33};
         assertArrayEquals(expected, actual);
     }
