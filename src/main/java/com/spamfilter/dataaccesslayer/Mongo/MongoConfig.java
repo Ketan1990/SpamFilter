@@ -20,6 +20,10 @@ public class MongoConfig {
 
     }
 
+    public static void  deleteDB() {
+        createMongoConnection();
+        mongo.getDB("SpamFilterWords").dropDatabase();
+    }
     private static void getDB() {
         createMongoConnection();
         database=  mongo.getDB("SpamFilterWords");

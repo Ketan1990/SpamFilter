@@ -1,9 +1,7 @@
 package com.spamfilter.utility;
 
 
-import com.spamfilter.fileopreation.FileRead;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * Created by Ketan on 7/20/2014.

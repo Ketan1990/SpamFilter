@@ -1,16 +1,19 @@
+/*
 package com.spamfilter.spam.labelemailtraining;
 
 import com.spamfilter.dataaccesslayer.Mongo.MongoQueryEngine;
 import com.spamfilter.dataaccesslayer.QueryEngine;
-import com.spamfilter.fileopreation.FileListings;
-import com.spamfilter.fileopreation.FileRead;
+import com.spamfilter.spam.fileopreation.FileListings;
+import com.spamfilter.spam.fileopreation.FileRead;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
+*/
 /**
  * Created by ketan on 7/24/2014.
- */
+ *//*
+
 public class Training {
     private   SpamTraining sTraining;
     private   GenuineTraining gTraining;
@@ -45,3 +48,4 @@ public class Training {
         }
     }
 }
+*/

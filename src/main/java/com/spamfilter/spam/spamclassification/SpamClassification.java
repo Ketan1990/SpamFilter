@@ -45,7 +45,6 @@ public class SpamClassification {
             return totalProbablity - 0.2;
         }else if(spamDAO.isPresentSpamId(emailID)) {
             return totalProbablity + 0.2;
-
         }
         return totalProbablity;
     }

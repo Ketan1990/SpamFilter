@@ -1,40 +1,57 @@
 package com.spamfilter.spam.labelemailtraining;
 import com.spamfilter.dataaccesslayer.QueryEngine;
 import com.spamfilter.dataaccesslayer.SpamDAO;
+import com.spamfilter.spam.WordCounter;
 import com.spamfilter.spam.WordCounts;
 import com.spamfilter.utility.MailContainExtractor;
 
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by ketan on 8/21/2014.
  */
 public class EmailTraining {
     private final QueryEngine queryEngine;
-    private final String mailContent;
     private final WordCounts wordCounts;
     private final SpamDAO spamDAO;
     private EmailType type;
-
-    public EmailTraining(QueryEngine queryEngine ,String mailContent) {
+    public EmailTraining(QueryEngine queryEngine ,EmailType type) {
+        this.type=type;
         this.queryEngine=queryEngine;
-        this.mailContent =mailContent;
         wordCounts =new WordCounts();
         spamDAO =new SpamDAO(queryEngine);
     }
 
 
-    public void emailId(EmailType type) {
-        this.type=type;
-        if(this.type==EmailType.spamMail) {
-            spamDAO.insertSpamEmailID(MailContainExtractor.getSenderId(mailContent));
-        }else if(this.type==EmailType.Geniune)
-        spamDAO.insertGeniuneEmailID(MailContainExtractor.getSenderId(mailContent));
+
+
+    public void saveEmailId(String maildata){
+        if(isSpam()) {
+            spamDAO.insertSpamEmailID(MailContainExtractor.getSenderId(maildata));
+        }else
+            spamDAO.insertGeniuneEmailID(MailContainExtractor.getSenderId(maildata));
     }
 
-    public void messageBody(EmailType spamMail) {
-
+    public void filterSaveMessage(String maildata) {
+        for (Map.Entry<String, Integer> entry : getWordCounts(maildata).getWordCounter().entrySet()) {
+            updateWordFrequency(entry.getKey(), entry.getValue());
+        }
     }
+
+    private void updateWordFrequency(String word, Integer frequency) {
+        if(isSpam()) {
+            spamDAO.updateSpamFrequency(word, frequency);
+        }else
+            spamDAO.updateGeniunFrequency(word,frequency);
+    }
+
+    private boolean isSpam() {
+        return this.type== EmailType.spamMail;
+    }
+
+    private WordCounter getWordCounts(String maildata) {
+        return wordCounts.counts( MailContainExtractor.getMessageContent(maildata));
+    }
+
+
 }

@@ -1,34 +1,74 @@
 package com.spamfilter.spam;
 
 /**
- * Created by ketan on 8/21/2014.
+ * Created by ketan on 8/22/2014.
  */
 public class Word {
-    private final String key;
-    private final String type;
-    private final Double count;
-    private final Double prob;
 
-    public Word(String key, String type, Double count, Double prob) {
-        this.key=key;
-        this.type=type;
-        this.count=count;
+    private  String keyWord;
+    private  String spamLabel;
+    private  Double spamCount;
+    private  String genuineLabel;
+    private  Double geuineCount;
+    private  Double prob;
+    private  String subkey;
+
+    public Word(String keyWord, String spamLabel, Double spamCount, String genuineLabel, Double genuineCount, Double prob) {
+        this.keyWord=keyWord;
+        this.spamLabel=spamLabel;
+        this.spamCount=spamCount;
+        this.genuineLabel=genuineLabel;
+        this.geuineCount=genuineCount;
         this.prob=prob;
     }
 
-    public String getKey() {
-        return key;
+    public Word(String keyWord, String subKey) {
+        this.keyWord=keyWord;
+        this.subkey=subKey;
     }
 
-    public String getType() {
-        return type;
+    public String getKeyWord() {
+        return keyWord;
     }
 
-    public Double getCount() {
-        return count;
+    public String getSpamLabel() {
+        return spamLabel;
+    }
+
+    public Double getSpamCount() {
+        return spamCount;
+    }
+
+    public String getGenuineLabel() {
+        return genuineLabel;
     }
 
     public Double getProb() {
         return prob;
+    }
+
+    public Double getGeuineCount() {
+        return geuineCount;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Word word = (Word) o;
+
+        if (keyWord != null ? !keyWord.equals(word.keyWord) : word.keyWord != null) return false;
+        if (genuineLabel != null ? !genuineLabel.equals(word.genuineLabel) : word.genuineLabel != null) return false;
+        if (geuineCount != null ? !geuineCount.equals(word.geuineCount) : word.geuineCount != null) return false;
+        if (prob != null ? !prob.equals(word.prob) : word.prob != null) return false;
+        if (spamCount != null ? !spamCount.equals(word.spamCount) : word.spamCount != null) return false;
+        if (spamLabel != null ? !spamLabel.equals(word.spamLabel) : word.spamLabel != null) return false;
+
+        return true;
+    }
+
+    public String getSubkey() {
+        return subkey;
     }
 }

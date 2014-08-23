@@ -1,4 +1,4 @@
-package com.spamfilter.dataaccesslayer.mongo;
+package com.mongoDB;
 
 import com.mongodb.DBCollection;
 import com.spamfilter.dataaccesslayer.Mongo.MongoConfig;

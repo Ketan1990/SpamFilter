@@ -1,7 +1,6 @@
 package com.spamfilter.utility;
 
 
-import com.spamfilter.fileopreation.FileRead;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

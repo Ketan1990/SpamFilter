@@ -1,7 +1,7 @@
 package com.spamfilter.dataaccesslayer;
 
-import com.spamfilter.spam.EmailAddress;
 import com.spamfilter.spam.Word;
+import com.spamfilter.spam.EmailAddress;
 import com.spamfilter.spam.spammath.SpamProbability;
 import com.spamfilter.utility.DuplicateWordFilter;
 
@@ -16,31 +16,32 @@ public class SpamDAO {
     }
 
     public double getSpamFrequencyCount(String key) {
-        return queryEngine.getScalarValue(key,"spamFrequency");
+        Double count= queryEngine.getScalarValue(new Word(key,"spamFrequency"));
+        return count;
     }
 
     public double getGenuinFrequencyCount(String key) {
-        return queryEngine.getScalarValue(key, "genuineFrequency");
+        return queryEngine.getScalarValue(new Word(key,"genuineFrequency"));
     }
 
     public double getProbability(String key) {
-        return queryEngine.getScalarValue(key, "probability");
+        return queryEngine.getScalarValue(new Word(key, "probability"));
     }
 
     public void updateSpamFrequency(String key, Integer value) {
         Double sf=new Double(value);
-        Double spamFrequency=getSpamFrequencyCount(key)+value;
+        Double spamFrequency=getSpamFrequencyCount(key)+sf;
         Double genuineFrequency=getGenuinFrequencyCount(key);
         Double prob=SpamProbability.calculate(spamFrequency, genuineFrequency);
-        queryEngine.saveScalarValues(key, "spamFrequency",sf, prob);
+        queryEngine.saveScalarValues(new Word(key,"spamFrequency",spamFrequency,"genuineFrequency",genuineFrequency,prob));
     }
 
     public void updateGeniunFrequency(String key, Integer value) {
         Double gf=new Double(value);
         Double spamFrequency=getSpamFrequencyCount(key);
-        Double genuineFrequency=getGenuinFrequencyCount(key)+value;
+        Double genuineFrequency=getGenuinFrequencyCount(key)+gf;
         Double prob= SpamProbability.calculate(spamFrequency, genuineFrequency);
-        queryEngine.saveScalarValues(key,"genuineFrequency",gf, prob);
+        queryEngine.saveScalarValues(new Word(key,"spamFrequency",spamFrequency,"genuineFrequency",genuineFrequency,prob));
     }
 
     public void insertGeniuneEmailID(String id) {
@@ -54,7 +55,6 @@ public class SpamDAO {
     }
 
     public boolean isPresentGenuineId(String id) {
-
         return queryEngine.isPresent(new EmailAddress("genuineEmailId", id));
     }
 
@@ -68,7 +68,6 @@ public class SpamDAO {
 
     public void removeGeniuneEmailID(String id) {
         queryEngine.remove(new EmailAddress("genuineEmailId", id));
-
     }
     public Double[] getAllProbability(String[] word) {
         String[]spamwords= DuplicateWordFilter.uniqueWords(word);

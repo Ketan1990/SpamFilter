@@ -1,6 +1,5 @@
 package com.spamfilter.spam;
 
-import com.spamfilter.dataaccesslayer.QueryEngine;
 import com.spamfilter.dataaccesslayer.SpamDAO;
 import com.spamfilter.dataaccesslayer.testdouble.QueryEngineTestDouble;
 import com.spamfilter.spam.spamclassification.FinalProbability;

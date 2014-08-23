@@ -1,16 +1,54 @@
-package com.spamfilter.dataaccesslayer;
-import com.spamfilter.dataaccesslayer.testdouble.QueryEngineTestDouble;
-
+package com.mongoDB;
+import com.spamfilter.dataaccesslayer.Mongo.MongoConfig;
+import com.spamfilter.dataaccesslayer.Mongo.MongoQueryEngine;
+import com.spamfilter.dataaccesslayer.QueryEngine;
+import com.spamfilter.dataaccesslayer.SpamDAO;
+import org.junit.After;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
-/*
-  Created by ketan on 7/23/2014.*/
+/**
+ * Created by ketan on 8/23/2014.
+ */
+public class MongoSpamDAOTest {
 
+private QueryEngine queryEngine=new MongoQueryEngine();
+    @Test
+    public void itShouldInsertSpamEmailId() {
+        //give
+        SpamDAO spamdao = new SpamDAO(queryEngine);
+        String id="rocky.jain@gmail.com";
+        //when
+        spamdao.insertSpamEmailID(id);
 
-public class SpamDAOTest {
-   private  QueryEngine queryEngine=new QueryEngineTestDouble();
+        //then
+        assertTrue(spamdao.isPresentSpamId(id));
+    }
+    @Test
+    public void itShouldRemoveSpamEmailId() {
+        //give
+        SpamDAO spamdao = new SpamDAO(queryEngine);
+        //when
+        String id="rocky.jain@gmail.com";
+        spamdao.insertSpamEmailID(id);
+
+        spamdao.removeSpamEmailID(id);
+        //then
+        assertFalse(spamdao.isPresentSpamId(id));
+    }
+    @Test
+    public void itShouldRemoveGeniuneEmailId() {
+        //give
+        SpamDAO spamdao = new SpamDAO(queryEngine);
+        //when
+        String id="rocky.jain@gmail.com";
+        spamdao.insertGeniuneEmailID(id);
+        spamdao.removeGeniuneEmailID(id);
+        //then
+        assertFalse(spamdao.isPresentSpamId(id));
+    }
 
 
 
@@ -20,12 +58,12 @@ public class SpamDAOTest {
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         spamdao.updateSpamFrequency("so",4);
-        spamdao.updateSpamFrequency("so",4);
-
-        //then
-        Double expected=8.0;
+        spamdao.updateGeniunFrequency("so", 4);
+        Double expected=4.0;
         Double actual=spamdao.getSpamFrequencyCount("so");
+        //then
         assertEquals(expected,actual);
+
     }
     @Test
     public void itShouldUpdateWithGenuincount(){
@@ -33,10 +71,9 @@ public class SpamDAOTest {
         SpamDAO spamdao = new SpamDAO(queryEngine);
         //when
         spamdao.updateGeniunFrequency("so", 4);
-        spamdao.updateSpamFrequency("so",4);
 
         //then
-        Double expected=4.0;
+        Double expected=8.0;
         Double actual=spamdao.getGenuinFrequencyCount("so");
         assertEquals(expected,actual);
 
@@ -75,28 +112,6 @@ public class SpamDAOTest {
         assertTrue(spamdao.isPresentSpamId(id));
     }
     @Test
-    public void itShouldRemoveSpamEmailId() {
-        //give
-        SpamDAO spamdao = new SpamDAO(queryEngine);
-        String id="rocky.jain@gmail.com";
-        //when
-        spamdao.insertSpamEmailID(id);
-        spamdao.removeSpamEmailID(id);
-        //then
-        assertFalse(spamdao.isPresentSpamId(id));
-    }
-    @Test
-    public void itShouldRemoveGeniuneEmailId() {
-        //give
-        SpamDAO spamdao = new SpamDAO(queryEngine);
-        //when
-        String id="rocky.jain@gmail.com";
-        spamdao.insertGeniuneEmailID(id);
-        spamdao.removeGeniuneEmailID(id);
-        //then
-      assertFalse(spamdao.isPresentSpamId(id));
-    }
-    @Test
     public void itShouldFetchFinalProbaility(){
         SpamDAO spamdao = new SpamDAO(queryEngine);
         String[]proStrings={"do","enter","Best"};
@@ -104,4 +119,9 @@ public class SpamDAOTest {
         Double[]expected={0.33,0.33, 0.33};
         assertArrayEquals(expected, actual);
     }
+   @After
+    public void tearDown(){
+       MongoConfig.deleteDB();
+    }
+
 }

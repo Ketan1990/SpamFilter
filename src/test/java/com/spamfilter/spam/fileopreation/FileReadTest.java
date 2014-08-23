@@ -1,4 +1,4 @@
-package com.spamfilter.fileopreation;
+package com.spamfilter.spam.fileopreation;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

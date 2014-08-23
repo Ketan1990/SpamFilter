@@ -1,4 +1,4 @@
-package com.spamfilter.fileopreation;
+package com.spamfilter.spam.fileopreation;
 
 import org.junit.Test;
 
@@ -18,7 +18,7 @@ public class FileListingTest {
         expecteds.add("TRAIN_00007.eml");
 
         //when
-        LinkedList<String>actual=files.listOf("E:\\git\\SpamFilter\\testmails\\spam");
+        LinkedList<String>actual=files.listOf("E:\\git\\SpamFilter\\testmails\\mongoDB");
         assertEquals(actual.getFirst(), expecteds.getFirst());
     }
 }

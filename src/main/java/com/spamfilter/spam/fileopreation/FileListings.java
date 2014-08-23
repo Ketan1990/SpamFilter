@@ -1,4 +1,4 @@
-package com.spamfilter.fileopreation;
+package com.spamfilter.spam.fileopreation;
 
 import java.io.File;
 import java.util.LinkedList;

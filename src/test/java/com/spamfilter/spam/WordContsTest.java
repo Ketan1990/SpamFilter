@@ -1,7 +1,7 @@
 package com.spamfilter.spam;
 
-import com.spamfilter.spam.WordCounts;
 import com.spamfilter.spam.WordCounter;
+import com.spamfilter.spam.WordCounts;
 import org.junit.Test;
 
 import java.util.Iterator;
