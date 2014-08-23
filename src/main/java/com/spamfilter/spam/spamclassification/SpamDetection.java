@@ -13,7 +13,7 @@ import com.spamfilter.utility.StringUtility;
 
 public class SpamDetection {
 
-    public static final double spamThreshold = 0.5;
+    public static final double SPAM_THRESHOLD = 0.5;
     private final QueryEngine queryEngine;
     private FinalProbability finalProbability;
     private String emailID;
@@ -31,7 +31,7 @@ public class SpamDetection {
         emailID=MailContainExtractor.getSenderId(maildata);
         String messageContent = getFilteredBodyContent(maildata);
         Double spamprob=getTotalprobability(messageContent);
-        return spamprob >= spamThreshold;
+        return spamprob >= SPAM_THRESHOLD;
     }
 
     private Double getTotalprobability(final String messageContent) {
