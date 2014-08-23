@@ -48,7 +48,7 @@ public class SpamClassificationTest {
         EmailTraining emailTraining=new EmailTraining(queryEngine,EmailType.Geniune);
         emailTraining.filterSaveMessage(mailData);
         emailTraining.saveEmailId(mailData);
-        SpamClassification spamClassification=new SpamClassification(queryEngine);
+        SpamDetection spamClassification=new SpamDetection(queryEngine);
         //then
         assertFalse(spamClassification.isSpam(mailData));
     }
@@ -81,7 +81,7 @@ public class SpamClassificationTest {
         EmailTraining emailTraining=new EmailTraining(queryEngine,EmailType.spamMail);
         emailTraining.filterSaveMessage(emaildata);
         emailTraining.saveEmailId(emaildata);
-        SpamClassification spamClassification=new SpamClassification(queryEngine);
+        SpamDetection spamClassification=new SpamDetection(queryEngine);
         //then
         assertTrue(spamClassification.isSpam(emaildata));
     }

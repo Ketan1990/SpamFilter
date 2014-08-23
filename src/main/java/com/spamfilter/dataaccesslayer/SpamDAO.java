@@ -1,7 +1,7 @@
 package com.spamfilter.dataaccesslayer;
 
-import com.spamfilter.spam.Word;
-import com.spamfilter.spam.EmailAddress;
+import com.spamfilter.spam.entity.Word;
+import com.spamfilter.spam.entity.EmailAddress;
 import com.spamfilter.spam.spammath.SpamProbability;
 import com.spamfilter.utility.DuplicateWordFilter;
 

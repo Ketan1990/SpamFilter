@@ -1,8 +1,8 @@
 package com.spamfilter.dataaccesslayer.testdouble;
 
 import com.spamfilter.dataaccesslayer.QueryEngine;
-import com.spamfilter.spam.Word;
-import com.spamfilter.spam.EmailAddress;
+import com.spamfilter.spam.entity.Word;
+import com.spamfilter.spam.entity.EmailAddress;
 
 import java.util.LinkedList;
 import java.util.List;

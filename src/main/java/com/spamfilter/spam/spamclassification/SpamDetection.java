@@ -11,7 +11,7 @@ import com.spamfilter.utility.StringUtility;
 
 
 
-public class SpamClassification {
+public class SpamDetection {
 
     public static final double spamThreshold = 0.5;
     private final QueryEngine queryEngine;
@@ -21,7 +21,7 @@ public class SpamClassification {
     private double totalProbablity;
     private String maildata;
 
-    public SpamClassification(final QueryEngine queryEngine){
+    public SpamDetection(final QueryEngine queryEngine){
         this.queryEngine=queryEngine;
         spamDAO=new SpamDAO(queryEngine);
         finalProbability =new FinalProbability(spamDAO);

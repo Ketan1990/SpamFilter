@@ -1,4 +1,4 @@
-package com.spamfilter.spam;
+package com.spamfilter.spam.entity;
 
 /**
  * Created by ketan on 8/22/2014.

@@ -1,8 +1,10 @@
 package com.mongoDB;
 import com.spamfilter.dataaccesslayer.Mongo.MongoConfig;
+
 import com.spamfilter.dataaccesslayer.Mongo.MongoQueryEngine;
 import com.spamfilter.dataaccesslayer.QueryEngine;
 import com.spamfilter.dataaccesslayer.SpamDAO;
+
 import org.junit.After;
 import org.junit.Test;
 
@@ -73,7 +75,7 @@ private QueryEngine queryEngine=new MongoQueryEngine();
         spamdao.updateGeniunFrequency("so", 4);
 
         //then
-        Double expected=8.0;
+        Double expected=4.0;
         Double actual=spamdao.getGenuinFrequencyCount("so");
         assertEquals(expected,actual);
 
@@ -113,14 +115,24 @@ private QueryEngine queryEngine=new MongoQueryEngine();
     }
     @Test
     public void itShouldFetchFinalProbaility(){
+       //given
         SpamDAO spamdao = new SpamDAO(queryEngine);
-        String[]proStrings={"do","enter","Best"};
+        spamdao.updateGeniunFrequency("do",2);
+        spamdao.updateSpamFrequency("do",2);
+
+        spamdao.updateGeniunFrequency("enter",2);
+        spamdao.updateSpamFrequency("enter",2);
+        spamdao.updateGeniunFrequency("best",2);
+        spamdao.updateSpamFrequency("best",2);
+      //when
+        String[]proStrings={"do","enter","best"};
         Double []actual=spamdao.getAllProbability(proStrings);
-        Double[]expected={0.33,0.33, 0.33};
+        Double[]expected={0.5,0.5, 0.5};
+       //then
         assertArrayEquals(expected, actual);
     }
-   @After
-    public void tearDown(){
+@After
+   public void tearDown(){
        MongoConfig.deleteDB();
     }
 
